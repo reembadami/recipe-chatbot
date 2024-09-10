@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatBot</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="index.js"></script> -->
+</head>
+
+<body>
+  
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        <i class="fas fa-comment-alt"></i> Recipe Chat
+      </div>
+      <div class="msger-header-options">
+        <span><i class="fas fa-cog"></i></span>
+      </div>
+    </header>
+  
+    <main class="msger-chat">
+  
+      <div class="msg right-msg">
+        <div
+         class="msg-img"
+         style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"
+        ></div>
+  
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">User</div>
+            <div class="msg-info-time">12:45</div>
+          </div>
+  
+          <div class="msg-text" id="chatbotInput">
+            Hello Chef!
+          </div>
+        </div>
+      </div>
+
+      <div class="msg left-msg">
+        <div
+         class="msg-img"
+         style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
+        ></div>
+  
+        <div class="msg-bubble">
+          <div class="msg-info">
+            <div class="msg-info-name">Master Chef</div>
+            <div class="msg-info-time">12:46</div>
+          </div>
+  
+          <div class="msg-text" id="chatbotOutput">
+            Hi, welcome to Chef's Speciality! Go ahead and send me a message. 😄
+          </div>
+        </div>
+      </div>
+    </main>
+  
+    <form class="msger-inputarea">
+      <input type="text" class="msger-input" id="myText" placeholder="Enter your message...">
+      <button type="submit" class="msger-send-btn" id="submitButton">Send</button>
+    </form>
+  </section>
+
+  <div class="static">
+    <h3 class="first">Frequently asked questions:-</h3>
+    <ol class="manu">
+      <li onclick="userSubmitEventHandler('How to make a Pizza?', 'true')">How to make a Pizza?</li>
+      <li onclick="userSubmitEventHandler('How to make brownies?', 'true')">How to make brownies?</li>
+      <li onclick="userSubmitEventHandler('Recipe with cheese', 'true')">Recipe with cheese</li>
+      <li onclick="userSubmitEventHandler('Quinoa Salad Recipe', 'true')">Quinoa Salad Recipe</li>
+    </ol>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
